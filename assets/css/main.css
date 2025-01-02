@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Thème Jinx */
+  --jinx-primary: #ff69f5;
+  --jinx-secondary: #00d4ff;
+  --jinx-accent: #8a2be2;
+  --jinx-dark: #0a0721;
+  --jinx-light: #1a1040;
+
+  /* Thème Vi */
+  --vi-primary: #ff4655;
+  --vi-secondary: #b91c30;
+  --vi-accent: #7b1fa2;
+  --vi-dark: #1a0f1f;
+  --vi-light: #2d1f33;
+
+  /* Thème par défaut (sera changé dynamiquement) */
+  --hextech-primary: var(--jinx-primary);
+  --hextech-secondary: var(--jinx-secondary);
+  --hextech-accent: var(--jinx-accent);
+  --hextech-dark: var(--jinx-dark);
+  --hextech-light: var(--jinx-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: var(--hextech-dark);
+  font-family: 'Rajdhani', sans-serif;
+  color: var(--hextech-primary);
+  transition: all 0.5s ease;
+}
+
+#__nuxt {
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--hextech-dark);
+}
+
+/* Masquer la scrollbar pour Chrome, Safari et Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Masquer la scrollbar pour IE, Edge et Firefox */
+* {
+  -ms-overflow-style: none;  /* IE et Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
