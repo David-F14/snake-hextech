@@ -1,75 +1,53 @@
-# Nuxt Minimal Starter
+# 🎮 Snake Hextech
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Un jeu de Snake inspiré de l'univers d'Arcane (League of Legends), avec deux personnages jouables : Jinx et Vi.
 
-## Setup
+## 🚀 Fonctionnalités
 
-Make sure to install dependencies:
+- 🎯 Gameplay classique du Snake
+- 🦹‍♀️ Deux personnages jouables avec des pouvoirs uniques :
+  - **Jinx** : Ralentissement temporaire du jeu (3 secondes)
+  - **Vi** : Dash qui permet de traverser rapidement le terrain
+- 🎨 Design inspiré de l'univers Arcane/League of Legends
+- 🎵 Musiques thématiques pour chaque personnage
+- 💥 Effets visuels personnalisés
+- 🏆 Système de meilleur score par personnage
+- 🎆 Animation de feu d'artifice lors d'un nouveau record
 
+## 🛠️ Technologies utilisées
+
+- Vue.js 3
+- Nuxt 3
+- HTML5 Canvas
+- CSS3
+
+## 📥 Installation
+
+1. Clonez le repository :
 ```bash
-# npm
+git clone https://github.com/David-F14/snake-hextech.git
+```
+
+2. Installez les dépendances :
+```bash
+cd snake-hextech
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+3. Lancez le serveur de développement :
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+4. Ouvrez votre navigateur à l'adresse indiquée (généralement http://localhost:3000)
 
-Build the application for production:
+## 🎮 Commandes
 
-```bash
-# npm
-npm run build
+- **Flèches directionnelles** : Contrôler le serpent
+- **Espace** : Activer le pouvoir spécial du personnage
+- **Bouton Son** : Activer/Désactiver la musique
+- **Changer de Champion** : Retourner à la sélection des personnages
 
-# pnpm
-pnpm build
+## 🎯 Objectif
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Mangez un maximum de nourriture pour faire grandir votre serpent et augmenter votre score. Évitez de toucher les murs ou votre propre queue !
